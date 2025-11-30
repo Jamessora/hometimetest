@@ -26,18 +26,18 @@ ActiveRecord::Schema[8.0].define(version: 2025_11_28_111851) do
 
   create_table "reservations", force: :cascade do |t|
     t.bigint "guest_id", null: false
-    t.integer "adults"
-    t.integer "children"
-    t.string "currency"
-    t.integer "guest_count"
-    t.integer "infants"
-    t.integer "nights"
-    t.decimal "payout_price", precision: 10, scale: 2
-    t.decimal "security_price", precision: 10, scale: 2
-    t.string "status"
-    t.decimal "total_price", precision: 10, scale: 2
-    t.date "start_date"
-    t.date "end_date"
+    t.integer "adults", null: false
+    t.integer "children", default: 0, null: false
+    t.string "currency", null: false
+    t.integer "guest_count", null: false
+    t.integer "infants", default: 0, null: false
+    t.integer "nights", null: false
+    t.decimal "payout_price", precision: 10, scale: 2, null: false
+    t.decimal "security_price", precision: 10, scale: 2, null: false
+    t.string "status", null: false
+    t.decimal "total_price", precision: 10, scale: 2, null: false
+    t.date "start_date", null: false
+    t.date "end_date", null: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.index ["guest_id"], name: "index_reservations_on_guest_id"
