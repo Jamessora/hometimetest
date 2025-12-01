@@ -13,7 +13,7 @@ class Guest < ApplicationRecord
             format: {
               with: /\A[\p{L}\s'-]+\z/,
               allow_blank: true,
-              message: "may only contain letters, spaces, hyphens, and apostrophes"
+              message: "may only contain letters, spaces, hyphens, and apostrophes."
             }
 
   validate :phone_numbers_present
@@ -23,6 +23,6 @@ class Guest < ApplicationRecord
   def phone_numbers_present
     return if phone_numbers.any?(&:present?)
 
-    errors.add(:phone_numbers, "must include at least one phone number")
+    errors.add(:phone_numbers, "must include at least one phone number.")
   end
 end
