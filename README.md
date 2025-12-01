@@ -195,3 +195,59 @@ POST /reservations
     }
 }
 ```
+
+### Local Test Evidence
+
+#### Rubocop
+
+<img width="371" height="68" alt="Screenshot 2025-12-01 204944" src="https://github.com/user-attachments/assets/2b57ef46-bfd3-4cf6-bffb-df90ef23e159" />
+
+#### Rspec
+
+<img width="625" height="85" alt="image" src="https://github.com/user-attachments/assets/799d8ad4-d70f-4aee-b418-619bd6237349" />
+
+#### Using payload format #1
+
+Scenario: Successfully created a reservation
+
+<img width="1172" height="891" alt="Screenshot 2025-12-01 133658" src="https://github.com/user-attachments/assets/c352055f-d3d7-42bd-aa38-75889b8e78dc" />
+
+Scenario: Start date is before the End date
+
+<img width="1182" height="707" alt="Screenshot 2025-12-01 133713" src="https://github.com/user-attachments/assets/03bf77fc-05e0-4273-8c3d-fb56ef69a16a" />
+
+Scenario: Guest count is not equal to the sum of `adults`+`children`
+
+<img width="1165" height="683" alt="Screenshot 2025-12-01 133719" src="https://github.com/user-attachments/assets/4f50fe5c-079c-49fd-a84c-02dd649a2454" />
+
+Scenario: Invalid currency
+
+<img width="1180" height="774" alt="Screenshot 2025-12-01 133726" src="https://github.com/user-attachments/assets/23fecb87-7f90-449c-b84f-ad88fd7b9434" />
+
+Scenario: Invalid email
+
+<img width="1161" height="775" alt="Screenshot 2025-12-01 133733" src="https://github.com/user-attachments/assets/968aee8f-27d1-4735-a808-2329ddcf621a" />
+
+Scenario: Atleast one phone number
+
+<img width="1172" height="778" alt="Screenshot 2025-12-01 133742" src="https://github.com/user-attachments/assets/cb25dfcb-748c-4db2-a869-215dd6c41912" />
+
+Scenario: Invalid status
+
+<img width="1172" height="715" alt="Screenshot 2025-12-01 133750" src="https://github.com/user-attachments/assets/6a70d2f7-5a65-45bd-8c58-4f48cada12a6" />
+
+#### Using payload format #2
+
+Scenario: Successfully created a reservation
+
+<img width="1170" height="882" alt="Screenshot 2025-12-01 133807" src="https://github.com/user-attachments/assets/1c2cc70d-6b61-4b14-a816-f26da9a63a30" />
+
+Scenario: Atleast one phone number
+
+<img width="1183" height="700" alt="Screenshot 2025-12-01 133815" src="https://github.com/user-attachments/assets/6008252e-88e5-4e58-8a45-843d60eed10d" />
+
+Scenario: First name cannot be a number
+
+<img width="1176" height="756" alt="Screenshot 2025-12-01 133851" src="https://github.com/user-attachments/assets/908e8921-b87f-48e4-a394-f4c9b7d19e07" />
+
+
